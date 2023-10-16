@@ -1,0 +1,305 @@
+:root {
+  font-family: 'Roboto', sans-serif;
+}
+
+.page {
+  background: #ffffff;
+}
+
+.page_content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  padding: 24px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.logo {
+  font-size: 18px;
+}
+
+.divider {
+  margin: 0;
+  height: 1px;
+  background: #dee2e6;
+}
+
+/* .divider-hr {
+  margin: 0;
+} */
+
+/* .divider-div {
+  margin: 0;
+  height: 1px;
+  background: #dee2e6;
+} */
+
+.nav {
+  display: block;
+}
+
+.nav_link {
+  color: #343a40;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav_link:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.nav_vertical > .nav_link {
+  display: block;
+}
+
+.nav_inline > .nav_link:not(:last-child) {
+  margin-right: 24px;
+}
+
+.nav_vertical > .nav_link:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.header_nav_right {
+  margin-left: auto;
+  width: fit-content;
+}
+
+.page_block:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.footer {
+  padding: 24px 0;
+  border-top: 1px solid #dee2e6;
+}
+
+.footer_copyright {
+  font-size: 14px;
+  color: #6c757d;
+  display: block;
+  margin-top: 12px;
+}
+
+.footer_title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #212529;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.hero_title {
+  font-size: 56px;
+  color: #fff;
+  font-weight: 500;
+  padding-bottom: 12px;
+}
+
+.hero_text {
+  font-size: 20 px;
+  color: #fff;
+  max-width: 585px;
+  line-height: 150%;
+}
+
+.hero {
+  background: #343a40;
+  border-radius: 24px;
+  padding: 80px;
+}
+
+.button {
+  text-decoration: none;
+  color: #fff;
+
+  max-width: 248px;
+  width: 100%;
+
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px 20px;
+
+  border-radius: 4.8px;
+  border: 1px solid #007bff;
+  background: #007bff;
+  text-align: center;
+}
+
+.button:hover {
+  background: hsl(211, 84%, 67%);
+}
+
+.preview {
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px solid #dee2e6;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* .preview_header_item:not(:last-of-type)  */
+.preview_header > span:not(:last-of-type) {
+  margin-right: 12px;
+}
+
+.preview_date {
+  color: #6c757d;
+  font-size: 16px;
+}
+
+.preview_category {
+  font-size: 16px;
+}
+
+.preview > *:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.preview_title {
+  display: block;
+  color: #343a40;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.preview_description {
+  color: #212529;
+  font-size: 15px;
+}
+
+.preview_category_1 {
+  color: #007bff;
+}
+
+.preview_category_2 {
+  color: #198754;
+}
+
+.preview_category_3 {
+  color: #f00;
+}
+
+.preview_category_4 {
+  color: #ff7a00;
+}
+
+.list_title {
+  font-size: 32px;
+  font-weight: 500;
+  color: #212529;
+  margin: 0;
+}
+
+.list_header {
+  padding: 12px;
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 40px;
+}
+
+.category_button {
+  color: #6c757d;
+  font-size: 16px;
+  padding: 10px 14px;
+  border-radius: 32px;
+  border: 1px solid #6c757d;
+  line-height: 100%;
+}
+
+.category_button:hover {
+  background: #6c757d15;
+}
+
+.category_list {
+  text-align: right;
+}
+
+.list_aside {
+  margin-left: 40px;
+}
+
+.list > *:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.post {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.post > *:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.post_title {
+  display: block;
+  font-size: 27px;
+  font-weight: 500;
+  color: #212529;
+}
+
+.post_info {
+  color: #999;
+  font-size: 16px;
+  font-weight: 400;
+}
+.post_author {
+  color: #0050ff;
+}
+.post_description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #212529;
+}
+
+.list_aside > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.about {
+  background: #f8f9fa;
+  padding: 24px;
+}
+
+.about_title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #212529;
+}
+
+.about_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #212529;
+  line-height: 170%;
+}
+
+.link_list {
+  padding: 24px;
+}
+
+.link_title {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  color: #212529;
+}
+
+.link_list > *:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.link_item {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.link_item:hover {
+  text-decoration: underline;
+}

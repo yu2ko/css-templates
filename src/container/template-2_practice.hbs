@@ -1,0 +1,97 @@
+<div class='page'>
+  <div class='page_content'>
+	<header class='page_block'>
+		<div class='header row g-0'>
+			<div class='col-3'>
+				{{> logo}}
+			</div>
+			
+			<nav class='header_nav col-9'>
+				<div class="header_nav_right">
+					{{> nav list=header}}
+				</div>
+			</nav>
+		</div>
+	</header>
+	
+	<section class="page_block">
+		<div class="hero">
+		{{#with hero}}
+			{{> hero_t12 title=title text=text}}
+			<a class="button" href="{{button.url}}">{{button.text}}</a>
+		{{/with}}
+		</div>
+	</section>
+
+	<section class="page_block">
+		<div class="row g-4">
+			{{#each preview}}
+			<div class="col-6">
+				{{> cardPreview_t2 data=this}}
+			</div>
+			{{/each}}
+		</div>
+	</section>
+
+	<main class="page_block">
+		<div class="main">
+			<div class="row g-0">
+				<div class="col-12">
+					<div class="list_header">
+						<div class="row g-0">
+							<div class="col-6">
+								<h2 class="list_title">List of post</h2>
+							</div>
+							<div class="col-6">
+								<div class="category_list">
+									{{#each categories}}
+										<button class="category_button">{{text}}</button>
+									{{/each}}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-7">
+					<div class="list">
+						{{#each news}}
+							{{> cardPost_t2 data=this}}
+						{{/each}}
+					</div>
+				</div>
+
+				<div class="col-5">
+					<aside class="list_aside">
+						<div class="about">
+							<h4 class="about_title">About</h4>
+							<p class="about_text">{{about}}</p>
+						</div>
+						
+						{{> linkList data=archive title="Archives"}}
+
+						{{> linkList data=social title="Social"}}
+
+					</aside>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="page_block">
+		<div class="row g-0 footer">
+			<div class="col-3">
+				{{> logo}}
+				<span class="footer_copyright">Copyright 2023-2024</span>
+			</div>
+			
+			{{#each footer}}
+			<div class="col-3">
+				<span class="footer_title">{{title}}</span>
+				{{> nav list=links isVertical=true}}
+			</div>
+			{{/each}}
+		</div>
+	</footer>
+  </div>
+</div>
