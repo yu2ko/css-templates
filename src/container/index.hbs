@@ -1,15 +1,89 @@
-{{!-- 
-Це код container файлу для index сторінки, 
-в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
- --}}
+<html>
 
-<div class="p-5">
-    <h1>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
+  <head>
+    <title>
+      Main page
+    </title>
+    <meta charset='utf-8' />
 
-    <button type="button" class="btn btn-primary">Купити</button>
-</div>
+    <link
+      rel='apple-touch-icon'
+      sizes='180x180'
+      href='/fav/apple-touch-icon.png'
+    />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='32x32'
+      href='/fav/favicon-32x32.png'
+    />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='16x16'
+      href='/fav/favicon-16x16.png'
+    />
+    <link rel='manifest' href='/fav/site.webmanifest' />
+    <meta
+      name='msapplication-TileColor'
+      content='#da532c'
+    />
+    <meta name='theme-color' content='#ffffff' />
 
-{{!-- 
-    Цей код містить лише те, що буде виводитись в <body>
-    Адже наш layout/default.hbs має вже структуру HTML
---}}
+    <link href='css/normalize.css' rel='stylesheet' />
+
+    <link href='css/index.css' rel='stylesheet' />
+
+    <meta
+      name='viewport'
+      content='viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'
+    />
+
+  </head>
+
+  <body>
+    <div class='page'>
+      <h1
+        class='templates__header text text--head'
+      >Templates for CSS practice!</h1>
+
+      <div class='page__divider'></div>
+
+      <div class='templates_block text text--title'>
+        <a
+          href='/template-1_practice'
+          class='template__btn'
+        >Template-1</a>
+        <a
+          href='/template-2_practice'
+          class='template__btn'
+        >Template-2</a>
+        <a
+          href='/template-3_practice'
+          class='template__btn'
+        >Template-3</a>
+        <a
+          href='/template-4_practice'
+          class='template__btn'
+        >Template-4</a>
+        <a
+          href='/template-5_practice'
+          class='template__btn'
+        >Template-5</a>
+        <a
+          href='/template-6_practice'
+          class='template__btn'
+        >Template-6</a>
+        <a
+          href='/template-7_practice'
+          class='template__btn'
+        >Template-7</a>
+        <a href='/slack' class='template__btn'>Slack</a>
+        <a
+          href='/dashboard'
+          class='template__btn'
+        >Dashboard</a>
+      </div>
+    </div>
+  </body>
+</html>

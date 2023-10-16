@@ -1,0 +1,17 @@
+{{#with data}}
+  <div class='art_card_item art_card_id-{{id}}'>
+    <div class='badge_on_img'>
+      <img src='{{photo}}' alt='pic' class='art_img' />
+      {{#if isNew}}
+        <span class='art_card_new'>NEW</span>
+      {{/if}}
+    </div>
+    <h3 class='art_name'>
+      {{name}}
+    </h3>
+    <p class='art_desc'>
+      {{description}}
+    </p>
+    <button type='button' class='art_card_btn'>View All</button>
+  </div>
+{{/with}}

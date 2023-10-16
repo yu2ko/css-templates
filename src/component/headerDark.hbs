@@ -1,0 +1,27 @@
+<div class='header'>
+  {{#with header}}
+    <div class='header_row1'>
+      <div class='header_logo'>
+        {{brandName}}
+      </div>
+      <div class='header_nav'>
+        {{#each links}}
+          <a href='{{url}}' class='nav_link'>{{text}}</a>
+        {{/each}}
+      </div>
+    </div>
+    <div class='header_row2'>
+      <div class='header_ad'>
+        <span class='header_ad_badge'>Ad</span>
+        <a
+          href='{{ad.url}}'
+          class='header_ad_url'
+        >{{ad.text}}: {{ad.url}}</a>
+      </div>
+      <div class='header_user'>
+        <span class='header_user_online'>User online:</span>
+        {{userOnline}}
+      </div>
+    </div>
+  {{/with}}
+</div>
