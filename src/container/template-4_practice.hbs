@@ -1,0 +1,58 @@
+	<header class='header'>
+			{{> logo}}
+		
+		<nav class='header_nav'>
+			<div class="header_nav_right">
+				{{> nav list=header}}
+			</div>
+		</nav>
+	</header>
+	
+	{{#with main}}
+	
+		<div class="main">
+			<img src="{{image}}" alt="main photo" class="main_image">
+			<div class="main_content">
+				<h1 class="main_title">{{heading}}</h1>
+				<p class="main_text">{{description}}</p>
+				<a class='button main_button' href='{{href}}'>{{button}}</a>
+			</div>
+			
+		</div>
+	{{/with}}
+
+	<main class="featured">
+		{{#each featured}}
+		{{> cardFeatured data=this}}
+		{{!-- <div class="card">
+			<div class="card_image" style="background-image: url({{photo}})"></div>
+			<h2 class="card_title">{{heading}}</h2>
+			<p class="card_text">{{info}}</p>
+			<a href="{{linkUrl}}" class="card_button">{{linkText}}</a>
+		</div> --}}
+		{{/each}}
+	</main>
+	
+	<div class="actions">
+		{{#each actions}}
+		{{> formActions data=this}}
+		{{!-- <div class="actions_content">
+			<h3 class="actions_heading">{{heading}}</h3>
+			<a href="{{url}}" class="button actions_button">{{text}}</a>
+		</div> --}}
+		{{/each}}
+	</div>
+
+	<footer class="footer">
+		<div>
+			{{> logo}}
+			<span class="footer_copyright">Copyright 2023-2024</span>
+		</div>
+		
+		{{#each footer}}
+		<div>
+			<span class="footer_title">{{title}}</span>
+			{{> nav list=links isVertical=true}}
+		</div>
+		{{/each}}
+	</footer>
