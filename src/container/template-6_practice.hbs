@@ -1,0 +1,94 @@
+	<header class='header'>
+		<a href="#test">
+			{{> logo}}
+		</a>
+		<nav class='header_nav'>
+			<div class="header_nav_right">
+				{{> nav list=header}}
+			</div>
+		</nav>
+	</header>
+	
+	<main class="main">
+    {{#with info}}
+      <div class="info">
+        <div class="info_content">
+          <h1 class="info_title">{{title}}</h1>
+          <p class="info_text">{{description}}</p>
+        </div>
+      </div>
+    {{/with}}
+
+    {{#with form}}
+      <form class="form">
+        <h2 class="form_title">{{title}}</h2>
+        
+        <div class="form_input_list">
+          {{#each inputs}}
+            <input type="{{type}}" placeholder="{{placeholder}}" class="form_input" name="{{name}}" id="form-input-{{id}}">
+          {{/each}}
+        </div>
+
+        <div class="form_checkbox">
+          <input type="checkbox" name="{{checkbox.name}}" id="{{checkbox.name}}">
+          <div></div>
+          <label for="{{checkbox.name}}">{{checkbox.label}}</label>
+        </div>
+        
+        <button type="submit" class="form_button">{{button}}</button>
+        
+        <p class="form_info">{{info}}</p>
+      </form>
+    {{/with}}
+	</main>
+
+  <div class="updates">
+		{{#with updates}}
+      <h1 class="updates_title">{{title}}</h1>
+				{{#each list}}
+        <div class="updates_list">
+            <div class="upd_square">
+              <div class="updates_square">32x32</div>
+            </div>
+            <div class="upd_content">
+              <strong class="updates_nickname">@{{nickname}}</strong>
+              <p class="updates_description">{{description}}</p>
+            </div>
+				</div>
+				{{/each}}
+
+        {{#with show_all}}
+				<a href="{{url}}" class="updates_link">{{text}}</a>
+        {{/with}}
+		{{/with}}
+  </div>
+
+		{{#with expirience}}
+			<div class="expirience">
+				<h2 class="expirience_title">{{title}}</h2>
+				<div class="expirience_badge">{{badge}}</div>
+				<div class="expirience_list">
+					{{#each list}}
+            {{> cardExpirience data=this}}
+						{{!-- <div class="expirience_card">
+							<strong class="expirience_name">{{name}}</strong>
+							<p class="expirience_details">{{details}}</p>
+						</div> --}}
+					{{/each}}
+				</div>
+			</div>	
+		{{/with}}
+
+	<footer class="footer">
+		<div>
+			{{> logo}}
+			<span class="footer_copyright">Copyright 2023-2024</span>
+		</div>
+		
+		{{#each footer}}
+		<div>
+			<span class="footer_title">{{title}}</span>
+			{{> nav list=links isVertical=true}}
+		</div>
+		{{/each}}
+	</footer>
