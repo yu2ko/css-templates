@@ -1,0 +1,82 @@
+{{!-- <div class='header'>
+  {{#with header}}
+    <div class='header_row1'>
+      <div class='header_logo'>
+        {{brandName}}
+      </div>
+      <div class='header_nav'>
+        {{#each links}}
+          <a href='{{url}}' class='nav_link'>{{text}}</a>
+        {{/each}}
+      </div>
+    </div>
+    <div class='header_row2'>
+      <div class='header_ad'>
+        <span class='header_ad_badge'>Ad</span>
+        <a
+          href='{{ad.url}}'
+          class='header_ad_url'
+        >{{ad.text}}: {{ad.url}}</a>
+      </div>
+      <div class='header_user'>
+        <span class='header_user_online'>User online:</span>
+        {{userOnline}}
+      </div>
+    </div>
+  {{/with}}
+</div> --}}
+
+<main class='hero'>
+  {{#with hero}}
+    <h1 class='hero_title'>{{title}}</h1>
+    <p class='hero_desc'>{{description}}</p>
+    {{#with button}}
+      <a href='{{url}}' class='hero_btn'>{{text}}</a>
+    {{/with}}
+  {{/with}}
+</main>
+
+<section class='about'>
+  <h2 class='about_heading'>{{about.heading}}</h2>
+  <p class='about_info'>{{about.info}}</p>
+</section>
+
+<section class='article'>
+  <div class='article_head'>
+    <h2 class='art_title'>Our Articles</h2>
+    <button type='button' class='art_head_btn'>View All</button>
+  </div>
+  <div class='article_card'>
+    {{#each articles}}
+    {{> articalCardDark data=this}}
+      {{!-- <div class='art_card_item art_card_id-{{id}}'>
+        <div class='badge_on_img'>
+          <img src='{{photo}}' alt='pic' class='art_img' />
+          {{#if isNew}}
+            <span class='art_card_new'>NEW</span>
+          {{/if}}
+        </div>
+        <h3 class='art_name'>
+          {{name}}
+        </h3>
+        <p class='art_desc'>
+          {{description}}
+        </p>
+        <button type='button' class='art_card_btn'>View All</button>
+      </div> --}}
+    {{/each}}
+  </div>
+</section>
+
+{{!-- <footer class='footer'>
+  {{#with footer}}
+    <div class='footer_pages'>
+      {{#each pages}}
+        <a href='{{path}}' class='nav_link'>{{name}}</a>
+      {{/each}}
+    </div>
+  {{/with}}
+  <div class='footer_copyright'>
+    {{footer.copyright}}
+  </div>
+</footer> --}}
